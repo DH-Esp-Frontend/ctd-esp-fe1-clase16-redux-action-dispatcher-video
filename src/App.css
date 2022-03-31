@@ -17,11 +17,37 @@
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.App-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+.App-product {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+}
+
+.App-product:hover {
+  cursor: pointer;
+  border-color: red;
+}
+
+.App-product:hover h5{
+  background-color: #e8a9a9;
+}
+
+.App-product h5{
+  background-color: white;
+  color: black;
+  margin: 0;
+  padding: 10px 0;
 }
 
 .App-link {
