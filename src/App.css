@@ -27,6 +27,32 @@
   grid-gap: 30px;
 }
 .App-product {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  border: 2px solid #282c34;
+}
+
+.App-product img{
+  margin-right: 10px;
+}
+
+.App-product:hover {
+  cursor: pointer;
+  border: 2px solid red;
+}
+
+.App-historial-producto {
+  display: flex;
+}
+
+.App-historial-producto button {
+  margin-left: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.App-product-card {
   width: 200px;
   display: flex;
   flex-direction: column;
@@ -34,16 +60,16 @@
   border: 2px solid #ccc;
 }
 
-.App-product:hover {
+.App-product-card:hover {
   cursor: pointer;
   border-color: red;
 }
 
-.App-product:hover h5{
+.App-product-card:hover h5{
   background-color: #e8a9a9;
 }
 
-.App-product h5{
+.App-product-card h5{
   background-color: white;
   color: black;
   margin: 0;

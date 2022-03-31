@@ -1,14 +1,14 @@
 import {FC} from "react";
 import {Producto} from "../data/productos";
 
-type ProductoProps = {
+type VistaProductoProps = {
     producto: Producto;
 }
 
-const VistaProducto:FC<ProductoProps> = ({producto}: ProductoProps) => {
+const VistaProducto:FC<VistaProductoProps> = ({producto}: VistaProductoProps) => {
     return <div className={"App-product"}>
-        <img src={producto.imagen} width={200} height={200} alt={producto.nombre}/>
-        <h5>{producto.nombre}</h5>
+        <img src={producto.imagen} width={60} height={60} alt={producto.nombre}/>
+        <label>{producto.nombre}</label>
     </div>
 }
 export default VistaProducto;
